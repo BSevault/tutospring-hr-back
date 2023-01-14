@@ -20,6 +20,10 @@ public class EmployeeService {
         return employeeRepository.findById(id);
     }
 
+    /**
+     * Read - Get all employees
+     * @return - An Iterable object of Employee fulfilled
+     */
     public Iterable<Employee> getEmployees() {
         return employeeRepository.findAll();
     }
